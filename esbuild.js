@@ -1,8 +1,6 @@
 import esbuild from "esbuild";
 import { umdWrapper } from "esbuild-plugin-umd-wrapper";
-import metaUrlPlugin from "@chialab/esbuild-plugin-meta-url";
 import { copy } from "esbuild-plugin-copy";
-import { pnpPlugin } from "@yarnpkg/esbuild-plugin-pnp";
 import inlineImage from "esbuild-plugin-inline-image";
 
 // Common esbuild options for both UMD and ESM
@@ -30,7 +28,7 @@ const commonOptions = {
         to: ["./dist/assets/"],
       },
     }),
-    umdWrapper({ libraryName: "credit-card-inputs", globalIdentifier: "CCI" }),
+    umdWrapper({ libraryName: "credit-cards-inputs", globalIdentifier: "CCI" }),
   ],
 };
 
@@ -39,7 +37,7 @@ esbuild
   .build({
     ...commonOptions,
     format: "umd",
-    outfile: "dist/credit-card-inputs.umd.js",
+    outfile: "dist/credit-cards-inputs.umd.js",
   })
   .catch(() => process.exit(1));
 

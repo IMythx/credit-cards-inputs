@@ -85,7 +85,7 @@ import { CreditCardsInputs } from "credit-cards-inputs";
 
   const expInput = document.getElementById("expinput");
 
-  const inputs = new CCI.CreditCardInputs({
+  const inputs = new CCI.CreditCardsInputs({
     cardNumberInput,
     cvvInput,
     expInput,
@@ -105,7 +105,7 @@ const cvvInput = document.getElementById("cvvInput");
 
 const expInput = document.getElementById("expinput");
 
-const inputs = new CreditCardInputs({
+const inputs = new CreditCardsInputs({
   cardNumberInput,
   cvvInput,
   expInput,
