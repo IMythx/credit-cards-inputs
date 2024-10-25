@@ -17,8 +17,8 @@ credit-cards-inputs is a vanilla JavaScript lightweight utility designed to hand
 
 3. **Validation**:
 
-- CVV/CVC and Card number: done [using](https://www.npmjs.com/package/credit-card-type).
-- expDate: done [using](https://www.npmjs.com/package/inputmask).
+   - CVV/CVC and Card number: done [using](https://www.npmjs.com/package/credit-card-type). <br/>
+   - expDate: done [using](https://www.npmjs.com/package/inputmask).
 
 4. **Input Restrictions**: Limit the input to numbers only for the credit card field, allow specific characters for expiration dates (/), and restrict the length based on the detected card type.
 
