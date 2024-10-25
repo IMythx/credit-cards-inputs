@@ -6,8 +6,11 @@ credit-cards-inputs is a vanilla JavaScript lightweight utility designed to hand
 
 - [Key features](#key-features)
 - [Getting started](#getting-started-using-a-cdn)
-- [Basic usage](#basic-usage)
+- [Basic exmaple & Live demo](#basic-example--live-demo)
+  - [Basic example](#basic-example)
+  - [Live demo](#live-demo)
 - [API Reference](#api-reference)
+- [Supported input types](#supported-input-types)
 
 ## Key features
 
@@ -31,14 +34,14 @@ credit-cards-inputs is a vanilla JavaScript lightweight utility designed to hand
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/credit-cards-inputs/dist/assets/styles.css"
+  href="https://cdn.jsdelivr.net/npm/credit-cards-inputs@latest/dist/assets/styles.css"
 />
 ```
 
 2. Add the library script
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/credit-cards-inputs/dist/credit-cards-inputs.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/credit-cards-inputs@latest/dist/credit-cards-inputs.umd.js"></script>
 ```
 
 ## Getting Started (Using ESM modules)
@@ -68,7 +71,9 @@ import "credit-cards-inputs/dist/assets/styles.css";
 import { CreditCardsInputs } from "credit-cards-inputs";
 ```
 
-## Basic usage
+## Basic example & Live demo
+
+### Basic example
 
 1. Using a CDN
 
@@ -76,7 +81,7 @@ import { CreditCardsInputs } from "credit-cards-inputs";
 <head>
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/credit-cards-inputs/dist/assets/styles.css"
+    href="https://cdn.jsdelivr.net/npm/credit-cards-inputs@latest/dist/assets/styles.css"
   />
 </head>
 <body>
@@ -84,7 +89,7 @@ import { CreditCardsInputs } from "credit-cards-inputs";
   <input type="text" id="cvvInput" />
   <input type="text" id="expinput" />
 </body>
-<script src="https://cdn.jsdelivr.net/npm/credit-cards-inputs/dist/credit-cards-inputs.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/credit-cards-inputs@latest/dist/credit-cards-inputs.umd.js"></script>
 <script>
   const cardNumberInput = document.getElementById("cardNumberInput");
 
@@ -118,6 +123,10 @@ const inputs = new CreditCardsInputs({
   expInput,
 });
 ```
+
+### Live demo:
+
+- [demo](https://credit-cards-inputs-demo.vercel.app/)
 
 ## API Reference
 
@@ -184,3 +193,7 @@ updateCard("visa", {
   },
 });
 ```
+
+## Supported input types
+
+**Please note that Text Mask supports input type of `text`, `tel`, `url`, `password`, and `search`. Due to a limitation in browser API, other input types, such as `email` or `number`, cannot be supported. However, it is normal to let the user enter an email or a number in an input type `text` combined the appropriate input mask.**

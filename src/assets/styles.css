@@ -1,21 +1,22 @@
 .cci__container {
   display: inline-block;
+}
+
+.cci__container__inner {
   position: relative;
 }
 
 .cci__container__img {
   position: absolute;
-  inset-inline-end: 3%;
+  inset-inline-end: 2%;
   height: 60%;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 60px;
+  width: 100%;
 }
 
 .cci__error {
   color: red;
   font-size: 12px;
-  position: absolute;
-  top: 102%;
-  left: 0;
+  margin-top: 3px;
 }

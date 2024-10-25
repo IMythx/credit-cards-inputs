@@ -102,26 +102,39 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       const cardNumberContainer = document.createElement("div");
 
+      const cardNumberContainerInner = document.createElement("div");
+
       const img = document.createElement("img");
 
       img.className = "cci__container__img";
 
       cardNumberContainer.className = "cci__container";
 
+      cardNumberContainerInner.className = "cci__container__inner";
+
       const inputHeight = cardNumberInput.getBoundingClientRect().height;
 
       cardNumberInput.style.paddingInlineEnd =
         inputHeight * 1.7 > 70 ? 70 + "px" : inputHeight * 1.7 + "px";
 
-      img.id = "credit-card-img";
+      img.style.maxWidth =
+        inputHeight * 1.25 > 60 ? 60 + "px" : inputHeight * 1.25 + "px";
+
+      img.id = "credit-card-icon";
 
       img.src = this.#icons.default;
 
+      img.alt = "default";
+
       cardNumberParent.insertBefore(cardNumberContainer, cardNumberInput);
 
-      cardNumberContainer.appendChild(cardNumberInput);
+      cardNumberParent.insertBefore(cardNumberContainerInner, cardNumberInput);
 
-      cardNumberContainer.appendChild(img);
+      cardNumberContainerInner.appendChild(cardNumberInput);
+
+      cardNumberContainerInner.appendChild(img);
+
+      cardNumberContainer.appendChild(cardNumberContainerInner);
 
       cardNumberInput.addEventListener(
         "input",
@@ -170,7 +183,9 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
     const cardTypes = creditCardType(target.value);
 
-    const icon = document.getElementById("credit-card-img") as HTMLImageElement;
+    const icon = document.getElementById(
+      "credit-card-icon",
+    ) as HTMLImageElement;
 
     this.removeError(
       target,
@@ -188,7 +203,9 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       this.#availableCardNumberLengths = cardTypes[0].lengths;
 
-      icon.src = this.#icons[cardTypes[0].type];
+      icon.src = this.#icons[cardTypes[0].type] || this.#icons.default;
+
+      icon.alt = cardTypes[0].type;
 
       this.maskNumberInput(target, cardTypes[0]);
     } else {
@@ -258,15 +275,15 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
     errorId: string,
     targetType: keyof Inputs,
   ) {
-    const parent = target.parentElement;
+    const container = target.closest(".cci__container");
 
-    const errorElement = parent.querySelector(`#${errorId}`);
+    const errorElement = container.querySelector(`#${errorId}`);
 
     if (availableLengths.includes(target.value.length)) {
       this.invalide[targetType] = false;
 
       if (errorElement) {
-        parent.removeChild(errorElement);
+        container.removeChild(errorElement);
       }
     }
   }
@@ -286,7 +303,7 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
     ) {
       const errorElement = document.createElement("p");
 
-      const parent = target.parentElement;
+      const container = target.closest(".cci__container");
 
       this.invalide[targetType] = true;
 
@@ -296,7 +313,7 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       errorElement.innerText = this.#errors[targetType];
 
-      parent.appendChild(errorElement);
+      container.appendChild(errorElement);
     }
   }
 
