@@ -23,6 +23,7 @@
   "author": "IMythx",
   "license": "MIT",
   "dependencies": {
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "credit-card-type": "^10.0.1",
     "inputmask": "^5.0.9"
   },
