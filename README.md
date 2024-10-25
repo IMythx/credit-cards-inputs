@@ -45,9 +45,16 @@ credit-cards-inputs is a vanilla JavaScript lightweight utility designed to hand
 
 1. Install with npm:
 
-&nbsp; - `npm install credit-card-inputs`
-or
-&nbsp; - `yarn add credit-card-inputs`
+<pre>
+  //npm
+  npm install credit-card-inputs
+
+  //yarn
+  yarn add credit-card-inputs
+
+  //pnpm
+  pnpm add credit-card-inputs
+</pre>
 
 2. Import the CSS:
 
