@@ -1,0 +1,21 @@
+.cci__container {
+  display: inline-block;
+  position: relative;
+}
+
+.cci__container__img {
+  position: absolute;
+  inset-inline-end: 3%;
+  height: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 60px;
+}
+
+.cci__error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 102%;
+  left: 0;
+}
