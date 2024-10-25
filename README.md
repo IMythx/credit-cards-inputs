@@ -1,4 +1,4 @@
-## credit-cards-inputs [![npm version](https://badge.fury.io/js/credit-cards-inputs.svg)](http://badge.fury.io/js/credit-cards-inputs) <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/IMythx/credit-cards-inputs" alt="License"></a> <a href="https://www.npmjs.com/package/credit-cards-inputs" rel="nofollow"><img src="https://img.shields.io/npm/dw/credit-cards-inputs.svg" alt="npm"></a> <a href="https://github.com/IMythx/credit-cards-inputs" rel="nofollow"><img src="https://img.shields.io/github/stars/IMythx/credit-cards-inputs" alt="stars"></a>
+# credit-cards-inputs [![npm version](https://badge.fury.io/js/credit-cards-inputs.svg)](http://badge.fury.io/js/credit-cards-inputs) <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/IMythx/credit-cards-inputs" alt="License"></a> <a href="https://www.npmjs.com/package/credit-cards-inputs" rel="nofollow"><img src="https://img.shields.io/npm/dw/credit-cards-inputs.svg" alt="npm"></a> <a href="https://github.com/IMythx/credit-cards-inputs" rel="nofollow"><img src="https://img.shields.io/github/stars/IMythx/credit-cards-inputs" alt="stars"></a>
 
 credit-cards-inputs is a vanilla JavaScript lightweight utility designed to handle the validation, formatting, and user-friendly input of credit card information. While primarily built with vanilla JavaScript, this library leverages two other specialized libraries to enhance functionality. It's ideal for enhancing payment forms with automatic card type detection, input masking, real-time validation, and card number formatting.
 
@@ -45,16 +45,16 @@ credit-cards-inputs is a vanilla JavaScript lightweight utility designed to hand
 
 1. Install with npm:
 
-<pre>
+```bash
   //npm
-  npm install credit-card-inputs
+  npm install credit-cards-inputs
 
   //yarn
-  yarn add credit-card-inputs
+  yarn add credit-cards-inputs
 
   //pnpm
-  pnpm add credit-card-inputs
-</pre>
+  pnpm add credit-cards-inputs
+```
 
 2. Import the CSS:
 
