@@ -4,4 +4,5 @@
 /.gitignore
 /tsconfig.json
 /rollup.config.js
-
+/.releaserc
+/release.config.cjs
