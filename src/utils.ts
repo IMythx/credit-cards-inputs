@@ -75,6 +75,8 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       const cvvErrorId = "cvv-input-error";
 
+      cvvInput.inputMode = "numeric";
+
       cvvContainer.className = "cci__container";
 
       cvvParent.insertBefore(cvvContainer, cvvInput);
@@ -106,7 +108,7 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       const img = document.createElement("img");
 
-      cardNumberInput.type = "tel";
+      cardNumberInput.inputMode = "numeric";
 
       img.className = "cci__container__img";
 
@@ -235,9 +237,10 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
       mask.splice(gap + index, 0, " ");
     });
 
-    inputmask(mask.join(""), { placeholder: "", autoUnmask: true }).mask(
-      target,
-    );
+    inputmask(mask.join(""), {
+      placeholder: "",
+      autoUnmask: true,
+    }).mask(target);
   }
 
   maskCvvInput(
