@@ -69,7 +69,7 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
     const expInput = inputs.expInput;
 
     if (cvvInput) {
-      const cvvParent = cardNumberInput.parentElement;
+      const cvvParent = cvvInput.parentElement;
 
       const cvvContainer = document.createElement("div");
 
