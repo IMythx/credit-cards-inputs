@@ -106,6 +106,8 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       const img = document.createElement("img");
 
+      cardNumberInput.type = "tel";
+
       img.className = "cci__container__img";
 
       cardNumberContainer.className = "cci__container";
@@ -187,13 +189,6 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
       "credit-card-icon",
     ) as HTMLImageElement;
 
-    this.removeError(
-      target,
-      cardTypes[0].lengths,
-      "credit-card-input-error",
-      "cardNumberInput",
-    );
-
     if (cardTypes.length === 1) {
       this.cardType = cardTypes[0].type;
 
@@ -208,6 +203,13 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
       icon.alt = cardTypes[0].type;
 
       this.maskNumberInput(target, cardTypes[0]);
+
+      this.removeError(
+        target,
+        cardTypes[0].lengths,
+        "credit-card-input-error",
+        "cardNumberInput",
+      );
     } else {
       this.cardType = undefined;
 
