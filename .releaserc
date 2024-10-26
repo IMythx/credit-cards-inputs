@@ -18,5 +18,14 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/npm",     
     "@semantic-release/changelog",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "package.json"
+        ]
+      }
+    ]
   ]
 }
