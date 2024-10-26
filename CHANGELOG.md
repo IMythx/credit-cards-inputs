@@ -1,3 +1,11 @@
+## [1.1.5](https://github.com/IMythx/credit-cards-inputs/compare/v1.1.4...v1.1.5) (2024-10-26)
+
+
+### Bug Fixes
+
+* **card number input:** force card number input type to be tel for the sake of mobile ([56f00e7](https://github.com/IMythx/credit-cards-inputs/commit/56f00e7953c80e35ca07e45a76337f13098a5869))
+* **card number input:** force card number input type to be tel for the sake of mobile ([786eafe](https://github.com/IMythx/credit-cards-inputs/commit/786eafe6c33d11cd57dcfe70206236b8b8eebb0a))
+
 ## [1.1.4](https://github.com/IMythx/credit-cards-inputs/compare/v1.1.3...v1.1.4) (2024-10-25)
 
 
