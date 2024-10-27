@@ -79,7 +79,7 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       cvvContainer.className = "cci__container";
 
-      cvvParent.insertBefore(cvvContainer, cvvInput);
+      cvvParent?.insertBefore(cvvContainer, cvvInput);
 
       cvvContainer.appendChild(cvvInput);
 
@@ -119,10 +119,10 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
       const inputHeight = cardNumberInput.getBoundingClientRect().height;
 
       cardNumberInput.style.paddingInlineEnd =
-        inputHeight * 1.7 > 70 ? 70 + "px" : inputHeight * 1.7 + "px";
+        inputHeight * 1.7 > 65 ? 65 + "px" : inputHeight * 1.7 + "px";
 
       img.style.maxWidth =
-        inputHeight * 1.25 > 60 ? 60 + "px" : inputHeight * 1.25 + "px";
+        inputHeight * 1.25 > 50 ? 50 + "px" : inputHeight * 1.25 + "px";
 
       img.id = "credit-card-icon";
 
@@ -130,9 +130,9 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       img.alt = "default";
 
-      cardNumberParent.insertBefore(cardNumberContainer, cardNumberInput);
+      cardNumberParent?.insertBefore(cardNumberContainer, cardNumberInput);
 
-      cardNumberParent.insertBefore(cardNumberContainerInner, cardNumberInput);
+      cardNumberParent?.insertBefore(cardNumberContainerInner, cardNumberInput);
 
       cardNumberContainerInner.appendChild(cardNumberInput);
 
@@ -170,7 +170,7 @@ export class CreditCardsInputs implements CreditCardsInputsInterface {
 
       expContainer.className = "cci__container";
 
-      expParent.insertBefore(expContainer, expInput);
+      expParent?.insertBefore(expContainer, expInput);
 
       expContainer.appendChild(expInput);
 

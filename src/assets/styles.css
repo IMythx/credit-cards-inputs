@@ -9,7 +9,7 @@
 .cci__container__img {
   position: absolute;
   inset-inline-end: 2%;
-  height: 60%;
+  height: 50%;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
