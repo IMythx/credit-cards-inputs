@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/IMythx/credit-cards-inputs/compare/v1.1.6...v1.1.7) (2024-10-26)
+
+
+### Bug Fixes
+
+* **cvv input:** cvv(code) input parent ([f0bc7d8](https://github.com/IMythx/credit-cards-inputs/commit/f0bc7d8a6a932b7ed20e5acb3fe62ac7190cbcc8))
+
 ## [1.1.5](https://github.com/IMythx/credit-cards-inputs/compare/v1.1.4...v1.1.5) (2024-10-26)
 
 
