@@ -1,5 +1,8 @@
 # credit-cards-inputs [![npm version](https://badge.fury.io/js/credit-cards-inputs.svg)](http://badge.fury.io/js/credit-cards-inputs) <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/IMythx/credit-cards-inputs" alt="License"></a> <a href="https://www.npmjs.com/package/credit-cards-inputs" rel="nofollow"><img src="https://img.shields.io/npm/dw/credit-cards-inputs.svg" alt="npm"></a> <a href="https://github.com/IMythx/credit-cards-inputs" rel="nofollow"><img src="https://img.shields.io/github/stars/IMythx/credit-cards-inputs" alt="stars"></a>
 
+[![Release](https://github.com/IMythx/credit-cards-inputs/actions/workflows/release.yml/badge.svg)](https://github.com/IMythx/credit-cards-inputs/actions)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+
 credit-cards-inputs is a vanilla JavaScript lightweight utility designed to handle the validation, formatting, and user-friendly input of credit card information. While primarily built with vanilla JavaScript, this library leverages two other specialized libraries to enhance functionality. It's ideal for enhancing payment forms with automatic card type detection, input masking, real-time validation, and card number formatting.
 
 ## Table of Contents

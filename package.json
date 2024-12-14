@@ -6,7 +6,7 @@
   "main": "dist/credit-cards-inputs.umd.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://github.com/IMythx/credit-cards-inputs",
+  "homepage": "https://credit-cards-inputs-demo.vercel.app/",
   "repository": {
     "url": "https://github.com/IMythx/credit-cards-inputs"
   },
@@ -18,15 +18,13 @@
     "semantic-release": "semantic-release"
   },
   "keywords": [
-    "credit-card-input"
+    "credit-cards-inputs"
   ],
   "author": "IMythx",
   "license": "MIT",
-  "dependencies": {
-    "credit-card-type": "^10.0.1",
-    "inputmask": "^5.0.9"
-  },
   "devDependencies": {
+    "credit-card-type": "^10.0.1",
+    "inputmask": "^5.0.9",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-typescript": "^12.1.1",
